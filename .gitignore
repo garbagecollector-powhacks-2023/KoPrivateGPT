@@ -3,7 +3,5 @@
 /.idea
 /__pycache__/
 /models
-.env
-/SOURCE_DOCUMENTS
 embedded_files_cache.pkl
 *.pkl
