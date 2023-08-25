@@ -14,4 +14,6 @@ RUN pip3 install -r ./webui/requirements.txt
 
 EXPOSE 7860
 
+RUN python3 ingest.py 
+
 ENTRYPOINT ["gradio", "app.py"]

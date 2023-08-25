@@ -14,13 +14,6 @@ services:
       MONGO_URL: ${MONGO_URL}
       MONGO_DB_NAME: ${MONGO_DB_NAME}
       MONGO_COLLECTION_NAME: ${MONGO_COLLECTION_NAME}
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: all
-              capabilities: [gpu]
 
   hwp-converter:
     ports:
