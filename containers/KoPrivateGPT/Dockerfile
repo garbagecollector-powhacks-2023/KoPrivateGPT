@@ -8,7 +8,7 @@ RUN pip3 install torch torchvision torchaudio --index-url https://download.pytor
 RUN apt-get install -y curl git wget --fix-missing
 RUN mkdir workspace
 WORKDIR ./workspace
-RUN git clone https://github.com/edai-club/KoPrivateGPT.git
+RUN git clone https://github.com/garbagecollector-powhacks-2023/KoPrivateGPT.git
 WORKDIR ./KoPrivateGPT
 RUN pip3 install -r requirements.txt
 RUN pip3 install -r ./webui/requirements.txt
