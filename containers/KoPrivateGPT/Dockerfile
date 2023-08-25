@@ -9,7 +9,7 @@ RUN apt-get install -y curl git wget --fix-missing
 RUN mkdir workspace
 WORKDIR ./workspace
 COPY ../../ ./
-WORKDIR ./KoPrivateGPT
+WORKDIR ./
 RUN pip3 install -r requirements.txt
 RUN pip3 install -r ./webui/requirements.txt
 
